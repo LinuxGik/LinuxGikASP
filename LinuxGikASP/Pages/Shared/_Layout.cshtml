@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Linuxgik" />
+    <meta name="description" content="Быстрый помошник в информационом мире. Мы ценим ваше время." />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/main.css" type="text/css" />
+    <link rel="stylesheet" href="~/css/code-block.css" type="text/css" />
+</head>
+<body>
+    <div class="body-container">
+        <div class="mid-container">
+            <header>
+                <nav>
+                    <ul class="site-nav">
+                        <li>
+                            <a asp-page="/Index" title="Главная"><img src="~/lib/images/brand.svg" alt="" /></a>
+                        </li>
+                        <li><a asp-page="/Csharp/CSharp" title="C#">C#</a></li>
+                        <li><a asp-page="/Razor/Syntax" title="Синтаксис Razor">Синтаксис Razor</a></li>
+                        <li><a asp-page="Index" title="GNU Linux">GNU Linux</a></li>
+                        <li><a href="web_devel/">Веб-разработка</a></li>
+                        <li><a href="ebiznes/" title="E-бизнес">E-Бизнес</a></li>
+                        <li><a href="programming/">Программирование</a></li>
+                        <li><a href="subd/">СУБД</a></li>
+                        <li><a href="network/">Сеть</a></li>
+                        <li><a href="windows/">Windows</a></li>
+                        <li><a href="forum/">Форум</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            @RenderBody()
+
+        </div>
+        <div class="left-container">
+            @if (IsSectionDefined("Left-container"))
+            {
+                @RenderSection("Left-container")
+            }
+            else
+            {
+                <h2>Левая часть</h2>
+            }
+        </div>
+        <div class="right-container">
+            @RenderSection("Right-container", false)
+        </div>
+    </div>
+</body>
+</html>

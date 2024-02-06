@@ -1,0 +1,39 @@
+﻿.code-block {
+    background-color: #404040;
+    margin: 1em;
+    padding: 0.5em 0.1em 0.1em;
+}
+
+.code-block-header {
+    display: flex;
+    padding: 0 0.5em 0.5em;
+    justify-content: space-between;
+}
+.lang {
+    color: rgb(128, 105, 128);
+    font-weight: bold;
+}
+.copy {
+    font-size: .7em;
+}
+
+.code-block-content {
+    background-color: #2F2F2F;
+    padding: 1.5em;
+    color: white;
+    font-family: "Mazda";
+}
+.cs-keyword {
+    color: #569CD6;
+}
+.cs-classes {
+    color: #4EC9B0;
+}
+
+.cs-methods {
+    color: #DCDCAA;
+}
+
+.cs-litterals {
+    color: #D69D85;
+}

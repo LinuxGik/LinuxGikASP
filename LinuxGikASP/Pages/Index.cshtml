@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "LinuxGik.ru";
+}
+
+<div>
+    <h1>C#</h1>
+    <h2>Выранивание кода в Visual Studio #ide, #visual studio</h2>
+    <p>выравнить код в Visual Studio - <kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>Ctrl</kbd> + <kbd>F</kbd> - выровнять выделенное</p>
+    <p>выравнить код в Visual Studio - <kbd>Ctrl</kbd> + <kbd>K</kbd>, <kbd>Ctrl</kbd> + <kbd>D</kbd> - выровнять во всём документе.</p>
+    <p>Visual Studio: Обернуть блок кода HTML в тег - <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd></p>
+    <article>
+        <h2>Классы</h2>
+        <div class="code-block">
+            <div class="code-block-header">
+                <p class="lang">C#</p>
+                <p>Простой класс</p>
+                <p class="copy">Копировать</p>
+            </div>
+            <div class="code-block-content">
+
+                <p><span class="cs-keyword">public class</span> <span class="cs-classes">Counter</span></p>
+                   <p>{</p>
+                <p style="padding-left: 2em"><span class="cs-keyword"> private int</span>  _count;</p>
+               @*
+                public int GetNextValue()
+                {
+                _count += 1;
+                return _count;
+                }
+                } *@
+
+            </div>
+        </div>
+       
+
+
+    </article>
+</div>
+

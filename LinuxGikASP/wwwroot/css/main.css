@@ -1,0 +1,45 @@
+﻿.site-nav {
+    display: flex;
+    padding-left: .5em;
+    background-color: #3f3c3c;
+    list-style-type: none;
+    border-radius: .1em;
+    margin: 0;
+}
+
+.site-nav > li {
+    margin-top: 0;
+}
+
+.site-nav > li > a {
+    display: block;
+    padding: 3px 1em;
+    background-color: #3f3c3c;
+    color: white;
+    text-decoration: none;
+    font-family: "open";
+    font-size: 13px;
+}
+
+.site-nav > li + li {
+    margin-left: auto;
+}
+
+.body-container {
+    display: flex;
+}
+
+.mid-container {
+    order: 1;
+    width: 70%;
+}
+
+.left-container {
+    order: 0;
+    width: 15%;
+}
+
+.right-container {
+    order: 2;
+    width: 15%;
+}
